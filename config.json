@@ -1,0 +1,41 @@
+{
+  "instances": [
+    {
+      "url": "https://jira.instance1.com",
+      "username": "user1",
+      "password": "password1",
+      "query": "project = XYZ",
+      "field_mapping": {
+        "summary": "Title",
+        "description": "Details",
+        "status": "Current Status"
+      },
+      "value_mapping": {
+        "status": {
+          "To Do": "Pending",
+          "In Progress": "Ongoing",
+          "Done": "Completed"
+        }
+      }
+    },
+    {
+      "url": "https://jira.instance2.com",
+      "username": "user2",
+      "password": "password2",
+      "query": "project = ABC",
+      "field_mapping": {
+        "summary": "Summary",
+        "description": "Description",
+        "status": "Status"
+      },
+      "value_mapping": {
+        "status": {
+          "Open": "New",
+          "In Review": "Reviewing",
+          "Closed": "Done"
+        }
+      }
+    }
+  ]
+}
+
